@@ -23,9 +23,10 @@ $ node app.js
 
 Client Application 내부 구성입니다.
 참고로 현재 API는 http://localhost:8081/api/v1/users/login 쪽으로 쐈는데, 경로 다르면 수정해주시면 됩니다.
-./controller/oauth.js
+
 
 ```javascript
+// ./controller/oauth.js
 export const githubLoginWithServer = async (req, res) => {
     console.log("log : start githubLoginWithServer");
     const { code } = req.query;
